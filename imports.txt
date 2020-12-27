@@ -1,0 +1,51 @@
+# Everything that is imported in notebooks or elsewhere. To generate this file:
+# 1) `rg 'import ' | cut -d : -f 2 | sort | uniq > imports-raw.txt`
+# 2) Clean up manually here and there
+
+from IPython.display import HTML
+from IPython.display import Image, display_svg, SVG
+from IPython.display import display,HTML
+from PIL import Image
+from dtreeviz.trees import *
+from fastai.callback.fp16 import *
+from fastai.callback.hook import *
+from fastai.collab import *
+from fastai.gen_doc.nbdoc import *
+from fastai.tabular.all import *
+from fastai.text.all import *
+from fastai.vision.all import * 
+from fastai.vision.all import *
+from fastai.vision.widgets import *
+from fastbook import *
+from fastbook import *
+from glob import glob
+from kaggle import api
+from math import sqrt
+from pandas.api.types import is_string_dtype, is_numeric_dtype, is_categorical_dtype
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.inspection import plot_partial_dependence
+from sklearn.tree import DecisionTreeRegressor
+from sympy import symbols,diff
+from torch import tensor
+from torch.autograd import Function
+from treeinterpreter import treeinterpreter
+from waterfall_chart import plot as waterfall
+import fastbook
+import matplotlib.pyplot as plt
+import torch.nn as nn
+import torch
+import warnings
+from azure.cognitiveservices.search.imagesearch import ImageSearchClient as api
+from fastai.vision.all import *
+from fastcore.all import *
+from ipywidgets import widgets
+from msrest.authentication import CognitiveServicesCredentials as auth
+from nbdev.clean import *
+from nbdev.export import *
+from nbdev.showdoc import *
+from pandas.api.types import CategoricalDtype
+from scipy.cluster import hierarchy as hc
+from sklearn.tree import export_graphviz
+import graphviz
+import matplotlib as mpl
+import nbformat

@@ -1,0 +1,33 @@
+# See imports.txt
+# This *.yml adds missing packages and prefers conda to pip when feasible
+# conda activate fastbook
+# conda env update --file environment-updated.yml
+
+name: fastbook
+channels:
+  - fastai
+  - pytorch
+  - defaults
+  - conda-forge
+dependencies:
+  - python>=3.8
+  - dtreeviz
+  - fastai>=2.0.0
+  - fastbook  
+  - graphviz
+  - ipywidgets
+  - kaggle
+  - matplotlib
+  - nbdev>=0.2.12
+  - pillow
+  - pytorch>=1.6
+  - sympy
+  - torchvision
+  - treeinterpreter
+  - pandas
+  - pip
+  - scikit-learn
+  - pip:
+    - azure-cognitiveservices-search-imagesearch
+    - sentencepiece
+    - waterfallcharts
